@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme inline {
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    color: #204b3e;
+    background: #dceddf;
+}
+
+button,
+textarea {
+    font: inherit;
+}
+
+.sidebar {
+    box-shadow: 1px 0 0 rgb(25 45 35 / 1%);
+}
+
+.empty-illustration {
+    box-shadow: 0 8px 24px rgb(75 115 86 / 7%);
+}
